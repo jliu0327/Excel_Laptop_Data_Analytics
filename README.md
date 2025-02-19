@@ -15,9 +15,50 @@ My final dashboard is in [Excel_Laptop_Data_Analytics](Excel_Laptop_Data_Analyti
 
 The following Excel skills were utilized for analysis:
 
-- Charts
-- Formulas and Functions
-- Data Validation
+- **Charts**
+- **Formulas and Functions**
+- **Data Validation**
+
+### Laptop Dataset
+
+As mentioned, the dataset used for this project came from kaggle, and includes detailed information on:
+
+- **Brands**
+- **CPU Processor**
+- **GPU**
+- **Price**
+
+## Dashboard Build
+
+### Charts  
+
+**Laptop Brand Prices - Bar Chart**  
+<img width="487" alt="Laptop_Brand_Prices _Bar_Chart" src="https://github.com/user-attachments/assets/7cde4c21-c31b-45f2-b1b7-075535dd47cd" />
+
+- **Excel Features:** Utilized bar chart feature and optimzed layout for clarity
+- **Design Choice:** Horizontal bar chart for visual comparison of average prices
+- **Data Organization:** Sorted laptop brands by descending salary for improved readability
+- **Insights Gained:** This enables quick identification of pricing trends, indicating that MSI and Apple cost the most compared to other laptop brands
+
+### Formulas and Functions
+
+**Average Prices by GPU**
+```excel
+=AVERAGE(
+      IF(
+         (laptops[Brand]=brand_name)*
+         (laptops[Price ($)]<>0)*
+         (laptops[Processor]=processor_name)*
+         (laptops[GPU]=A2),
+          laptops[Price ($)]
+      )
+)
+```
+- **Multi-Criteria Filtering:** Checks laptop brand, cpu, gpu, and excludes prices that are blank
+- **Array Formula:** Utilizes ```AVERAGE()``` function with nested ```IF``` statement
+- **Insights Gained:** Provides specific pricing information, depending on brand, cpu, and gpu 
+
+
 
 ## Laptop Price Analysis
 
