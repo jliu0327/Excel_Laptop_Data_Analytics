@@ -9,7 +9,7 @@ The data came from the kaggle dataset: [Laptop Pricing Dataset](https://www.kagg
 
 ### Dashboard File
 
-My final dashboard is in [Excel_Laptop_Data_Analytics](Excel_Laptop_Data_Analytics)  
+My final dashboard is in [Excel_Laptop_Data_Analytics](Excel_Laptop_Data_Analytics/Laptop_Price_Dashboard.xlsx)  
 
 ### Excel Skills Used
 
